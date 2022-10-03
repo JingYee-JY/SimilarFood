@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Lilita One:wght@400;600&display=swap">
+    <link rel="stylesheet" href="mian.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game">
+        <div class="number"></div>
+        <p>Group the food togther.</p>
+        <div class="squence">
+            <div class="group1">
+                <p class="groupName"></p>
+                <img class="choice1" src="./img/empty.png">
+                <img class="choice2" src="./img/empty.png">
+                <p class="groupItem"></p>
+            </div>
+            <div class="group2">
+                <p class="groupName"></p>
+                <img class="choice3" src="./img/empty.png">
+                <img class="choice4" src="./img/empty.png">
+                <p class="groupItem"></p>
+            </div>
+        </div>
+        <p>Tap to select the food below and add them to the group above by tapping.</p>
+        <div class="options">
+            <img class="btn1">
+            <img class="btn2">
+            <img class="btn3">
+            <img class="btn4">
+        </div>
+        <button class="confrimButton hide">
+            <p class="words">Confirm</p>
+        </button>
+    </div>
+    <div class="end hide">
+        <div class="output">
+            <img class="face" src="">
+            <p class="text"></p>
+        </div>
+        <p class="answer"></p>
+        <div class="squence">
+            <div class="group1">
+                <p class="groupName"></p>
+                <img class="choice1" src="./img/empty.png">
+                <img class="choice2" src="./img/empty.png">
+                <p class="groupItem"></p>
+            </div>
+            <div class="group2">
+                <p class="groupName"></p>
+                <img class="choice3" src="./img/empty.png">
+                <img class="choice4" src="./img/empty.png">
+                <p class="groupItem"></p>
+            </div>
+        </div>
+        <button class="nextButton">
+            <p class="words">Next</p>
+        </button>
+    </div>
+    <div class="final hide">
+        <img class="emoji">
+        <p class="encouragment"></p>
+        <button class="againButton" onclick="window.location.href='index.html'">
+            <p class="words"><img src="./img/arrow.png" class="arrowHead">Play again</p>
+        </button>
+        <button class="homeButton" onclick="window.location.href='https://gimme.sg/activations/dementia/';">
+            <p class="words"><img src="./img/arrow.png" class="arrowHead">Back to home</p>
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.number{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.game p{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 20px;
+    margin: 0;
+}
+
+.squence{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(2, 50%);
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    justify-content: center;
+    position: relative;
+}
+
+.group1, .group2{
+    background: rgb(163, 161, 172,0.6);
+    border-radius: 10px;
+}
+
+.group1 img, .group2 img{
+    width: 60%;
+}
+
+.options{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 10px;
+    display: grid;
+    gap: 2%;
+    justify-items: center;
+    grid-template-columns: repeat(2,48%);
+}
+
+.btn1,.btn2,.btn3,.btn4{
+    width: 70%;
+}
+
+.hide{
+    visibility: hidden;
+    display: none;
+}
+
+.output{
+    padding: 0 5%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face{
+    width: 30%;
+    margin-right: 10px;
+}
+
+.text,.answer,.encouragment{
+    font-size: 35px;
+    margin: 0;
+}
+
+.emoji{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+/*ipad*/
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .game p, .number{
+        font-size: 30px;
+    }
+    .end p{
+        font-size: 35px;
+    }
+    .text{
+        font-size: 40px !important;
+    }
+    .btn1, .btn2, .btn3, .btn4{
+        width: 58%;
+    }
+    .group1 img, .group2 img {
+        width: 50%;
+    }
+    .emoji{
+        margin-top: 200px;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:1200px){
+    .btn1, .btn2, .btn3, .btn4{
+        width: 63%;
+    }
+    .group1 img, .group2 img {
+        width: 53%;
+    }
+    .output{
+        margin-top: 20px;
+    }
+}
